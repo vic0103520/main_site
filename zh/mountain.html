@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <title>FLOLAC - Programming Language</title>
+  <title>FLOLAC - 正規驗證</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="preload stylesheet" crossorigin="anonymous">
@@ -29,8 +29,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-general-menu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="../../zh/index.html">FλOL∀C</a>
-
+  <a class="navbar-brand" href="../zh/index.html">FλOL∀C</a>
   <div class="collapse navbar-collapse" id="nav-general-menu">
     <ul class="navbar-nav">
       <li class="nav-item dropdown">
@@ -38,9 +37,9 @@
           程式語言
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="../../zh/ocean">海年介紹</a>
+          <a class="dropdown-item" href="../zh/ocean.html">海年介紹</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="../../zh/ocean/2020">2020</a>
+          <a class="dropdown-item" href="../zh/2020">2020</a>
           <a class="dropdown-item" href="#">2018</a>
           <a class="dropdown-item" href="#">2016</a>
           <a class="dropdown-item" href="#">2014</a>
@@ -53,7 +52,7 @@
           正規驗證
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="../../zh/mountain">山年介紹</a>
+          <a class="dropdown-item" href="../zh/mountain.html">山年介紹</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">2019</a>
           <a class="dropdown-item" href="#">2017</a>
@@ -63,77 +62,58 @@
           <a class="dropdown-item" href="#">2009</a>
         </div>
       </li>
-    </ul>
-
-    <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" href="../../zh/ocean/2020">應屆課程</a>
+        <a class="nav-link" href="../zh/2020">應屆課程</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item">
         <a class="nav-link" href="#">報名資訊</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link" href="#contact">聯絡我們</a>
       </li>
     </ul>
   </div>
   <div class="collapse navbar-collapse">
-    <ul class="navbar-nav ml-auto small">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="../../en/ocean/index.html">English</a>
+        <a class="nav-link" href="../zh/contact.html"><i class="fas fa-envelope"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/flolac.tw/"><i class="fab fa-facebook"></i></a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" target="_blank" href="https://m.me/326622080745536"><i class="fab fa-facebook-messenger"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/flolac-tw/"><i class="fab fa-github"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fab fa-slack"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../en/mountain.html"><small>English</small></a>
       </li>
     </ul>
   </div>
 </nav>
-<div class="container">
+<div class="container pt-md-5 pt-3">
   
 </div>
 
 
-<div class="container">
-  <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-      <div class="col-6 col-md">
-        <h5>報名資訊</h5>
+<div class="container-lg">
+  <footer class="py-md-4 my-md-2">
+    <div class="row justify-content-between border-top pt-1">
+      <div class="col small text-muted">
+        Powered by
+        <a class="licens-link" href="https://jaspervdj.be/hakyll/">Hakyll</a>,
+        <a class="licens-link" href="https://getbootstrap.com">Bootstrap</a>, and
+        <a class="licens-link" href="https://fonts.google.com">Google Fonts</a><br>
       </div>
-      <div class="col-6 col-md">
-        <h5>社群網站</h5>
-        <ul class="list-unstyled text-small list-inline">
-          <li class="list-inline-item">
-            <a class="text-muted" href="https://github.com/flolac-tw/"><i class="fab fa-github"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a class="text-muted" href="https://www.facebook.com/flolac.tw/"><i class="fab fa-facebook"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a class="text-muted" href="#"><i class="fab fa-slack"></i></a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-6 col-md" id="contact">
-        <h5>聯絡我們</h5>
-        <ul class="list-unstyled text-small list-inline">
-          <li class="list-inline-item">
-            <a class="text-muted" href="#"><i class="fas fa-envelope"></i></a>
-          </li>
-          <li class="list-inline-item">
-             <a class="text-muted" href="https://m.me/326622080745536"><i class="fab fa-facebook-messenger"></i></a>
-          </li>
-        </ul>
+      <div class="col small text-muted text-right">
+        All contents on this site are licensed under
+        <a class="licens-link" href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
       </div>
     </div>
   </footer> 
 </div>
 
-<div class="text-center small text-muted pb-2 pb-md-4">
-    Powered by
-    <a class="licens-link" href="https://jaspervdj.be/hakyll/">Hakyll</a>, 
-    <a class="licens-link" href="https://getbootstrap.com">Bootstrap</a>, 
-    <a class="licens-link" href="https://pages.github.com">GitHub Pages</a>,
-    <a class="licens-link" href="https://fontawesome.com">Font Awesome</a>, and
-    <a class="licens-link" href="https://fonts.google.com">Google Fonts</a><br>
-    All contents on this site are licensed under
-    <a class="licens-link" href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
-</div>
 </body>
 </html>
