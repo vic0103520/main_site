@@ -26,7 +26,7 @@
     <a class="navbar-brand py-1 d-none d-sm-block d-md-none" href="#"><img src="../img/logo.svg" style="height: 1.5rem" /></a>
 
     <ul class="navbar-nav text-nowrap">
-      <!-- <li class="nav-item"><a class="nav-link" href="/zh/">首頁</a></li> -->
+      <li class="nav-item"><a class="nav-link" href="../zh/">首頁</a></li>
       <li class="nav-item"><a class="nav-link" href="../zh/2020">應屆課程</a></li>
       <li class="nav-item"><a class="nav-link" href="../zh/2020/registration.html">報名資訊</a></li>
       <li class="nav-item dropdown">
@@ -63,38 +63,30 @@
   </div>
 </nav>
 
-<header class="container-fluid bg-light">
-  <div class="row">
-    <div class="col">
-      <h1 class="text-center text-dark">「邏輯、語言與計算」暑期研習營<br>
-      <small class="text-muted">Formosan Summer School on Logic, Language, and Computation</small>
-    </h1>
-    </div>
-  </div>
-</header>
 
 
 
-
-<div class="container-md">
-  <section class="row row-cols-2 text-light bg-dark">
-    <div class="col-12 col-md bg-light">
-    </div>
-    <div class="col-12 col-md text-justify">
-      <h2 class="light-border-bottom">課程宗旨</h2>
-      <p>近年來，從事基礎計算科學研究之台灣學者們已在各校各自成立研究團隊並相互合作。
+<div id="landing">
+  <header>
+    <h1>「邏輯、語言與計算」暑期研習營</h1>
+    <span>Formosan Summer School on Logic, Language, and Computation</span>
+  </header>
+</div>
+<div id="aim" class="dark">
+  <section>
+    <h2>課程宗旨</h2>
+    <p>近年來，從事基礎計算科學研究之台灣學者們已在各校各自成立研究團隊並相互合作。
 對基礎計算科學有興趣之學生須透過一系列課程學習基本知識；然而，國內從事此類研究的學者分散在各校，
 難以僅靠一己之力開設整套課程。因此，我們邀請有相同興趣的學者一同開課，訓練下一代的研究人才。</p>
 <p>。從2008年起，本研習營在兩大主題之間輪流替換。自 2012 年起，本研習營正式成為台灣大學暑修課程，
   針對大學部學生開課，但亦歡迎研究生選修。</p>
 
-    </div>
   </section>
-  
-  <section class="row text-dark bg-light">
-    <div class="col">
-      <h2>今年主題：型別原理</h2>
-      <p>程式語言學的研究對象是程式，可以想成是「寫得很詳細、可以一步步照著做的規則／流程」；
+</div>
+<div id="ocean-mountain-intro" class="dark alt">
+  <section id="ocean-intro">
+    <h2 class="ocean">今年主題：型別原理</h2>
+    <p>程式語言學的研究對象是程式，可以想成是「寫得很詳細、可以一步步照著做的規則／流程」；
   程式不一定非得和電腦扯上關係，像 SOP（標準作業流程）和飛行員必用的 checklists（檢查表）就是寫給人執行（照著做）的程式。
   程式語言學的最大特點是用符號作為主要工具，精準（無歧義）簡練（不冗長）地表示出程式和相關概念，以及研究它們的各種性質。
   除了精準簡練以外，我們喜歡的符號有以下這些特質
@@ -105,45 +97,74 @@
 </ul>
 我們特別喜歡向數學和邏輯學借用符號，和他們長久累積發展的深刻概念互通。</p>
 
-    </div>
   </section>
-  
-  <section class="row text-light bg-dark">
-    <div class="col">
-      <h2>來年主題：自動驗證</h2>
-      
-    </div>
+  <section id="mountain-intro">
+    <h2 class="mountain">來年主題：自動驗證</h2>
+    
   </section>
-  
-  <section class="row text-dark bg-light">
-    <div class="col-12 col-md-8">
-      <h2 class="dark-border-bottom">2020 年特別講題：依值型別編程</h2>
-      <p>D. E. Knuth 的名言 "Beware of bugs in the above code; I have only proved it correct, not tried it." 被程式員譽為傳奇，因為現實情境中大家整天疲於除錯。於是當 E. W. Dijkstra 說出 "In programming, nothing is cheaper than not introducing the bugs in the first place." 時，程式員只是嗤之以鼻 — 程式哪有不寫錯的！但事實上，依值型別編程 (dependently typed programming) 的相關研究正帶我們走向一個「程式不可能寫錯」的新世界！</p>
-      <p>當今主流程式語言的描述能力難以表達程式員的完整意圖，例如我們可描述樹狀資料結構但無法描述其平衡性質和元素排序，於是需要另外寫證明解釋程式之目的 — 當然，主流語言也無法表達型式證明，於是程式目的之解釋就退化為註釋。踏在直構型別論的基礎上，依值型別編程的目標是進一步融合證明與程式，藉著巧妙設計程式型別，使程式性質的證明能夠隱寓於程式本身，無需分開處理 — 如此一來，程式本身便足以表達原先需另以證明解釋之意義。</p>
-    </div>
-    <div class="col-12 col-md-4 bg-dark text-light overflow-auto d-flex flex-row flex-md-column">
-      
-      <div class>2020 - Dependently Typed Programming</div>
-      
-      <div class>2019 - Blockchain and Smart Contract Verification</div>
-      
-      <div class>2018 - Session Types</div>
-      
-      <div class>2017 - Vienna Development Method</div>
-      
-      <div class>2016 - Probabilistic Programming and Modeling</div>
-      
-      <div class>2014 - Embedded Domain-Specific Languages</div>
-      
-      <div class>2012 - Program Verification using Coq</div>
-      
-      <div class>2010 - Using Frama-C</div>
-      
-      <div class>2008 - Interpreting Types as Abstract Values</div>
-      
-    </div>
+</div>
+<div id="special-lecture" class="dark">
+  <section>
+    <h2>2020 年特別講題：依值型別編程</h2>
+    <p>D. E. Knuth 的名言 "Beware of bugs in the above code; I have only proved it correct, not tried it." 被程式員譽為傳奇，因為現實情境中大家整天疲於除錯。於是當 E. W. Dijkstra 說出 "In programming, nothing is cheaper than not introducing the bugs in the first place." 時，程式員只是嗤之以鼻 — 程式哪有不寫錯的！但事實上，依值型別編程 (dependently typed programming) 的相關研究正帶我們走向一個「程式不可能寫錯」的新世界！</p>
+    <p>當今主流程式語言的描述能力難以表達程式員的完整意圖，例如我們可描述樹狀資料結構但無法描述其平衡性質和元素排序，於是需要另外寫證明解釋程式之目的 — 當然，主流語言也無法表達型式證明，於是程式目的之解釋就退化為註釋。踏在直構型別論的基礎上，依值型別編程的目標是進一步融合證明與程式，藉著巧妙設計程式型別，使程式性質的證明能夠隱寓於程式本身，無需分開處理 — 如此一來，程式本身便足以表達原先需另以證明解釋之意義。</p>
   </section>
-  
+</div>
+<div id="previous-guest-lectures" class="dark alt">
+  <section>
+    <h2>過往特別講題</h2>
+    <ol>
+      
+      <li>
+        <span class="guest-lecture-year">2020</span>
+        <span class="guest-lecture-title">Dependently Typed Programming</span>
+      </li>
+      
+      <li>
+        <span class="guest-lecture-year">2019</span>
+        <span class="guest-lecture-title">Blockchain and Smart Contract Verification</span>
+      </li>
+      
+      <li>
+        <span class="guest-lecture-year">2018</span>
+        <span class="guest-lecture-title">Session Types</span>
+      </li>
+      
+      <li>
+        <span class="guest-lecture-year">2017</span>
+        <span class="guest-lecture-title">Vienna Development Method</span>
+      </li>
+      
+      <li>
+        <span class="guest-lecture-year">2016</span>
+        <span class="guest-lecture-title">Probabilistic Programming and Modeling</span>
+      </li>
+      
+      <li>
+        <span class="guest-lecture-year">2014</span>
+        <span class="guest-lecture-title">Embedded Domain-Specific Languages</span>
+      </li>
+      
+      <li>
+        <span class="guest-lecture-year">2012</span>
+        <span class="guest-lecture-title">Program Verification using Coq</span>
+      </li>
+      
+      <li>
+        <span class="guest-lecture-year">2010</span>
+        <span class="guest-lecture-title">Using Frama-C</span>
+      </li>
+      
+      <li>
+        <span class="guest-lecture-year">2008</span>
+        <span class="guest-lecture-title">Interpreting Types as Abstract Values</span>
+      </li>
+      
+    </ol>
+  </section>
+</div>
+<!-- 
+<div class="container-md">
   <section class="row row-cols-md-2 row-cols-1" style="background-color: #dee2e6">
     <div class="col d-flex flex-row" style="overflow-x: auto">
       <div class="px-4 py-3">
@@ -158,7 +179,7 @@
     </div>
   </div>
   </section>
-</div>
+</div> -->
 <!--
 <section class="row border">
   <div class="col border">
