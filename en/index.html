@@ -6,6 +6,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="https://i.imgur.com/6fWk1Pk.png">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/d25dd1f650.js" crossorigin="anonymous"></script>
@@ -28,14 +29,15 @@
     <a class="navbar-brand py-md-2 d-none d-md-block" href="#"><img src="../img/logo.svg" style="height: 2rem" /></a>
     <a class="navbar-brand py-1 d-none d-sm-block d-md-none" href="#"><img src="../img/logo.svg" style="height: 1.5rem" /></a>
 
-    <ul class="navbar-nav text-nowrap">
+    <ul class="navbar-nav">
       <!-- <li class="nav-item"><a class="nav-link" href="/en/">Home</a></li> -->
-      <li class="nav-item"><a class="nav-link" href="../en/2021">Current Event</a></li>
-      <li class="nav-item"><a class="nav-link" href="../en/2021/registration.html">Registration</a></li>
+      <li class="nav-item"><a class="nav-link" href="../en/2022">Current Event</a></li>
+      <li class="nav-item"><a class="nav-link" href="../en/2022/registration.html">Registration</a></li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Past Events</a>
-        <div class="dropdown-menu">
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-md-left">
           <div class="dropdown-item">Type-Theoretic Foundations</div>
+          <a class="dropdown-item" href="../en/2022">2022</a>
           <a class="dropdown-item" href="../en/2020">2020</a>
           <a class="dropdown-item" href="../flolac18.html" target="_blank">2018</a>
           <a class="dropdown-item" href="../flolac16.html" target="_blank">2016</a>
@@ -44,6 +46,7 @@
           <a class="dropdown-item" href="../flolac10.html" target="_blank">2010</a>
           <div class="dropdown-divider"></div>
           <div class="dropdown-item bg-light">Automated Verification</div>
+          <a class="dropdown-item" href="../en/2021">2021</a>
           <a class="dropdown-item" href="../flolac19.html" target="_blank">2019</a>
           <a class="dropdown-item" href="../flolac17.html" target="_blank">2017</a>
           <a class="dropdown-item" href="../flolac15.html" target="_blank">2015</a>
@@ -56,13 +59,13 @@
       </li>
     </ul>
 
-    <span class="navbar-nav d-none d-sm-flex">
-      <a class="nav-link" href="javascript:location='mailto:\u0066\u006c\u006f\u006c\u0061\u0063\u0040\u0069\u0069\u0073\u002e\u0073\u0069\u006e\u0069\u0063\u0061\u002e\u0065\u0064\u0075\u002e\u0074\u0077';void 0"><i class="fas fa-envelope"></i></a>
-      <a class="nav-link" href="https://github.com/flolac-tw"><i class="fab fa-github"></i></a>
-      <a class="nav-link" href="https://www.facebook.com/flolac.tw/"><i class="fab fa-facebook"></i></a>
-      <a class="nav-link" target="_blank" href="https://m.me/326622080745536"><i class="fab fa-facebook-messenger"></i></a>
+    <span class="navbar-nav">
+      <a class="nav-link d-none d-sm-flex" href="javascript:location='mailto:\u0066\u006c\u006f\u006c\u0061\u0063\u0040\u0069\u0069\u0073\u002e\u0073\u0069\u006e\u0069\u0063\u0061\u002e\u0065\u0064\u0075\u002e\u0074\u0077';void 0"><i class="fas fa-envelope"></i></a>
+      <a class="nav-link d-none d-sm-flex" href="https://github.com/flolac-tw"><i class="fab fa-github"></i></a>
+      <a class="nav-link d-none d-sm-flex" href="https://www.facebook.com/flolac.tw/"><i class="fab fa-facebook"></i></a>
+      <a class="nav-link d-none d-sm-flex" target="_blank" href="https://m.me/326622080745536"><i class="fab fa-facebook-messenger"></i></a>
 <!--      <a class="nav-link nav-item" href="#"><i class="fab fa-slack"></i></a> -->
-      <a class="nav-link" href="../zh/index.html"><small>中</small></a>
+      <a class="nav-link d-sm-flex" href="../zh/index.html"><small>中</small></a>
     </span>
   </div>
 </nav>
@@ -70,13 +73,14 @@
 
 
 
-<div id="landing">
+<div id="landing" class="ocean">
   <header>
+    <img src="../img/logo.svg">
     <h1>Formosan Summer School on Logic, Language, and Computation</h1>
     <span>「邏輯、語言與計算」暑期研習營</span>
   </header>
 </div>
-<div>
+<div class="ocean">
   <section>
     <h2>Aims of Summer School</h2>
     <p>In recent years, Taiwanese scholars engaged in basic computational science research have established research teams and collaborated with each other. Students who are interested in basic computing science must learn basic knowledge through a series of courses; however, domestic scholars engaged in such research are scattered in various schools, and it is difficult to set up a whole set of courses by themselves. Therefore, we invite scholars with similar interests to start classes together to train the next generation of research talents.</p>
@@ -85,33 +89,40 @@
   </section>
 </div>
 <div id="ocean-mountain-intro" class="alt two-column">
+  
   <section id="ocean-intro" class="ocean">
-    <h2>今年主題：Type-Theoretic Foundations</h2>
+    <h2>Topic of the Year: Type-Theoretic Foundations</h2>
     <p>The research object of programming language is programs, which can be thought of as "rules / processes that are written in detail and can be followed step by step"; programs do not necessarily have to be related to computers, like SOP (standard operating procedures) and pilot The necessary checklists (checklists) are programs written for people to execute (follow). The most important feature of programming linguistics is to use symbols as the main tool to accurately (no ambiguity) and concise (not verbose) expressions of programs and related concepts, and to study their various properties. In addition to being precise and concise, our favorite symbols have the following characteristics:
 <ul>
   <li>Powerful: After writing down the things about the program with symbols, we can talk about these things with mathematical methods, and use mathematical proofs to ensure powerful good properties, such as "programs that meet certain conditions can never go wrong."</li>
   <li>Ease of use: Symbols are our tools for solving program-related problems. We will pay attention to the design of symbols and design special symbols that are easy to use for various problems.</li>
   <li>Connotation: Good symbols often have multiple levels of meaning, helping us think about problems from different angles;</li>
 </ul>
-We especially like to borrow symbols from mathematics and logic to communicate with their profound concepts accumulated over time.</p><p><a href="../en/2020">最近課程 (2020)</a></p> 
+We especially like to borrow symbols from mathematics and logic to communicate with their profound concepts accumulated over time.</p><p><a href="../en/2020">Most Recent Course (2022)</a></p> 
 
   </section>
   <section id="mountain-intro" class="mountain">
-    <h2>來年主題：Automated Verification</h2>
+    <h2>Topic of Next Year: Automated Verification</h2>
     
   </section>
+  
 </div>
-<div>
+<!--div class="ocean">
   <section>
     <h2>2020 年特別講題：依值型別編程</h2>
     <p>D. E. Knuth 的名言 "Beware of bugs in the above code; I have only proved it correct, not tried it." 被程式員譽為傳奇，因為現實情境中大家整天疲於除錯。於是當 E. W. Dijkstra 說出 "In programming, nothing is cheaper than not introducing the bugs in the first place." 時，程式員只是嗤之以鼻 — 程式哪有不寫錯的！但事實上，依值型別編程 (dependently typed programming) 的相關研究正帶我們走向一個「程式不可能寫錯」的新世界！</p>
     <p>當今主流程式語言的描述能力難以表達程式員的完整意圖，例如我們可描述樹狀資料結構但無法描述其平衡性質和元素排序，於是需要另外寫證明解釋程式之目的 — 當然，主流語言也無法表達型式證明，於是程式目的之解釋就退化為註釋。踏在直構型別論的基礎上，依值型別編程的目標是進一步融合證明與程式，藉著巧妙設計程式型別，使程式性質的證明能夠隱寓於程式本身，無需分開處理 — 如此一來，程式本身便足以表達原先需另以證明解釋之意義。</p>
   </section>
-</div>
-<div id="previous-guest-lectures" class="alt">
+</div-->
+<div id="previous-guest-lectures" class="alt ocean">
   <section>
-    <h2>過往特別講題</h2>
+    <h2>Past Guest Lectures</h2>
     <ol>
+      
+      <li>
+        <span class="guest-lecture-year">2022</span>
+        <span class="guest-lecture-title">Monad and Side Effects</span>
+      </li>
       
       <li>
         <span class="guest-lecture-year">2020</span>
@@ -179,27 +190,37 @@ We especially like to borrow symbols from mathematics and logic to communicate w
   </section>
 </div> -->
 
-<div id="stats" class="two-column">
+<div id="faq" class="ocean">
   <section>
-    <img src="../img/year-stat-cropped.png" alt="學員年級統計">
+    <h2>FAQs</h2>
     <div>
-      <h3>適合幾年級的學生呢？</h3>
-      <p>根據我們的統計，歷年來參加者的年齡分布很廣，除了大學生與研究生外，還有少數高中生跟不少的社會人士。課程沒有預設背景，不同年級的學員（盡力參與）都可以跟得上課程，我們也有助教群可以協助學員。</p>
-    </div>
-  </section>
-  <section>
-    <img src="../img/fatality-cropped.png" alt="學員年級統計">
-    <h3>課程很難嗎？</h3>
-    <p>因為各種科系背景的不同，每個人狀況都不大一樣。大致上我們發現科系背景間的差異較大，例如歷年來數學系跟資工系高分通過的比較多，但也曾有財金系的同學拿到滿分哦！至於不及格的同學則是沒有明顯的差異，即便是最相關的資工系也有不少人最後沒拿到學分（殘念⋯⋯）</p>
+  <h3>What are guest lectures?</h3>
+  <p>Besides fundamental lectures that are mostly the same for every other year, we would invite scholars to share with us advanced topics in the field. The topics of these lectures vary depending on the guest lecturers.</p>
+</div>
+<div>
+  <h3>What (natural) language is this course taught in?</h3>
+  <p>The lectures are in Mandarin or English depending on the lecturers, while slides are usually in English.</p>
+</div>
+<div>
+  <h3>What kind of students does this course aim for?</h3>
+  <p>Statistically, our participants vary in age. Besides undergraduate and graduate students, there were a few highschool students and working professionals. We don't assume the participants' backgrounds, and we have more TAs than usual courses to make sure people from different backgrounds can keep up.</p>
+</div>
+<img src="../img/year-stat-cropped.png" alt="學員年級統計">
+<div>
+  <h3>How hard is this course?</h3>
+  <p>Every participant may face different difficulties depending on their background. In general we find people from mathematics or computer science backgrounds pass in high marks more regularly. But there is no consistency in who could fail the course.</p>
+</div>
+<img src="../img/fatality-cropped.png" alt="學員年級統計">
+
   </section>
 </div>
-<div id="feedbacks" class="alt">
+<div id="feedbacks" class="alt ocean">
   <section>
-      <h2>學員心得</h2>
+      <h2>Feedbacks from Students</h2>
       <div>
         <blockquote>
-          <p>只要對 theoretical computer science稍微有興趣的人，
-            沒去一定會後悔得哭出來！特別今年是關於languages 的主題，
+          <p>只要對 theoretical computer science 稍微有興趣的人，
+            沒去一定會後悔得哭出來！特別今年是關於 languages 的主題，
             就是那些 type systems、denotational semantics 之類的東西！
             跌斷手都要去的呀！
           </p>
@@ -259,35 +280,34 @@ We especially like to borrow symbols from mathematics and logic to communicate w
       <div class="pb-3 pr-5">
         <object type="image/svg+xml" data="../img/logo.svg" style="height: 3.5rem;"></object>
       </div>
-      <dl class="dl-vbar"><dt class>主辦單位</dt><dd><ul class="list-inline-block m-0"><li>中央研究院資訊科學所</li><li>台灣大學資訊管理學系</li><li>台灣大學資訊工程學系</li><li>台灣大學電機工程學系</li></ul>
-        </dd><dt>籌辦團隊</dt>
-        <dd><dl class="inline-block-lists m-0"><div><dt class>課程委員</dt><dd>
-          <div class="container-4-rows">
-                  <div>陳郁方</div>
-                </div></dd></div><div>
-                  <dt>事務委員</dt><dd><div = class="container-4-rows">
-                    </div></dd></div><div>
-                  <dt>助教團長</dt><dd>
-                <div = class="container-4-rows">
-              </dd>
-            </div><div>
-            <dt>助教團</dt><dd><div class="container-4-rows">
-                  </div></dd></div>
-            <!--
-            <li class="list-inline-item">陳恭</li>
-            <li class="list-inline-item">莊庭瑞</li>
-            <li class="list-inline-item">穆信成</li>
-            <li class="list-inline-item">蔡益坤</li>
-            <li class="list-inline-item">王柏堯</li>
-            -->
+      <dl class="dl-vbar">
+        <dt>主辦單位</dt>
+        <dd>
+          <ul class="list-inline-block m-0">
+            <li>中央研究院資訊科學所</li>
+            <li>台灣大學資訊管理學系</li>
+          </ul>
+        </dd>
+        
+        <dt>籌辦團隊</dt>
+        <dd>
+          <dl class="inline-block-lists m-0">
+            
+            
+            
+            
           </dl>
         </dd>
         <dt>連絡信箱</dt>
-        <dd><a class="text-decoration-none text-light" href="javascript:location='mai'+'lto:\u0066\u006c\u006f\u006c\u0061'+'\u0063\u0040\u0069\u0069\u0073\u002e\u0073'+'\u0069\u006e\u0069\u0063\u0061\u002e\u0065'+'\u0064\u0075\u002e\u0074\u0077';void 0"><script type="text/javascript">document.write('\u0066\u006c'+'\u006f\u006c\u0061\u0063\u0040'+'\u0069\u0069\u0073\u002e\u0073'+'\u0069\u006e\u0069\u0063'+'\u0061\u002e\u0065\u0064'+'\u0075\u002e\u0074\u0077')</script></a></dd>
+        <dd>
+          <a class="text-decoration-none text-light" href="javascript:location='mai'+'lto:\u0066\u006c\u006f\u006c\u0061'+'\u0063\u0040\u0069\u0069\u0073\u002e\u0073'+'\u0069\u006e\u0069\u0063\u0061\u002e\u0065'+'\u0064\u0075\u002e\u0074\u0077';void 0">
+            <script type="text/javascript">document.write('\u0066\u006c'+'\u006f\u006c\u0061\u0063\u0040'+'\u0069\u0069\u0073\u002e\u0073'+'\u0069\u006e\u0069\u0063'+'\u0061\u002e\u0065\u0064'+'\u0075\u002e\u0074\u0077')</script>
+          </a>
+        </dd>
       </dl>
+    </div>
   </div>
-  </div>
-</footer> 
+</footer>
 
 </body>
 </html>

@@ -6,6 +6,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="https://i.imgur.com/6fWk1Pk.png">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/d25dd1f650.js" crossorigin="anonymous"></script>
@@ -28,14 +29,15 @@
     <a class="navbar-brand py-md-2 d-none d-md-block" href="#"><img src="../../img/logo.svg" style="height: 2rem" /></a>
     <a class="navbar-brand py-1 d-none d-sm-block d-md-none" href="#"><img src="../../img/logo.svg" style="height: 1.5rem" /></a>
 
-    <ul class="navbar-nav text-nowrap">
+    <ul class="navbar-nav">
       <!-- <li class="nav-item"><a class="nav-link" href="/en/">Home</a></li> -->
-      <li class="nav-item"><a class="nav-link" href="../../en/2021">Current Event</a></li>
-      <li class="nav-item"><a class="nav-link" href="../../en/2021/registration.html">Registration</a></li>
+      <li class="nav-item"><a class="nav-link" href="../../en/2022">Current Event</a></li>
+      <li class="nav-item"><a class="nav-link" href="../../en/2022/registration.html">Registration</a></li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Past Events</a>
-        <div class="dropdown-menu">
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-md-left">
           <div class="dropdown-item">Type-Theoretic Foundations</div>
+          <a class="dropdown-item" href="../../en/2022">2022</a>
           <a class="dropdown-item" href="../../en/2020">2020</a>
           <a class="dropdown-item" href="../../flolac18.html" target="_blank">2018</a>
           <a class="dropdown-item" href="../../flolac16.html" target="_blank">2016</a>
@@ -44,6 +46,7 @@
           <a class="dropdown-item" href="../../flolac10.html" target="_blank">2010</a>
           <div class="dropdown-divider"></div>
           <div class="dropdown-item bg-light">Automated Verification</div>
+          <a class="dropdown-item" href="../../en/2021">2021</a>
           <a class="dropdown-item" href="../../flolac19.html" target="_blank">2019</a>
           <a class="dropdown-item" href="../../flolac17.html" target="_blank">2017</a>
           <a class="dropdown-item" href="../../flolac15.html" target="_blank">2015</a>
@@ -56,13 +59,13 @@
       </li>
     </ul>
 
-    <span class="navbar-nav d-none d-sm-flex">
-      <a class="nav-link" href="javascript:location='mailto:\u0066\u006c\u006f\u006c\u0061\u0063\u0040\u0069\u0069\u0073\u002e\u0073\u0069\u006e\u0069\u0063\u0061\u002e\u0065\u0064\u0075\u002e\u0074\u0077';void 0"><i class="fas fa-envelope"></i></a>
-      <a class="nav-link" href="https://github.com/flolac-tw"><i class="fab fa-github"></i></a>
-      <a class="nav-link" href="https://www.facebook.com/flolac.tw/"><i class="fab fa-facebook"></i></a>
-      <a class="nav-link" target="_blank" href="https://m.me/326622080745536"><i class="fab fa-facebook-messenger"></i></a>
+    <span class="navbar-nav">
+      <a class="nav-link d-none d-sm-flex" href="javascript:location='mailto:\u0066\u006c\u006f\u006c\u0061\u0063\u0040\u0069\u0069\u0073\u002e\u0073\u0069\u006e\u0069\u0063\u0061\u002e\u0065\u0064\u0075\u002e\u0074\u0077';void 0"><i class="fas fa-envelope"></i></a>
+      <a class="nav-link d-none d-sm-flex" href="https://github.com/flolac-tw"><i class="fab fa-github"></i></a>
+      <a class="nav-link d-none d-sm-flex" href="https://www.facebook.com/flolac.tw/"><i class="fab fa-facebook"></i></a>
+      <a class="nav-link d-none d-sm-flex" target="_blank" href="https://m.me/326622080745536"><i class="fab fa-facebook-messenger"></i></a>
 <!--      <a class="nav-link nav-item" href="#"><i class="fab fa-slack"></i></a> -->
-      <a class="nav-link" href="../../zh/2020/registration.html"><small>中</small></a>
+      <a class="nav-link d-sm-flex" href="../../zh/2020/registration.html"><small>中</small></a>
     </span>
   </div>
 </nav>
@@ -70,11 +73,11 @@
 
 
 
-<div id="header">
+<div id="header" class="ocean">
   <header>
     <h1>Formosan Summer School on Logic, Language, and Computation, 2020</h1>
     <span>邏輯、語言與計算暑期研習營</span><br />
-    <span>2020.8.10–21</span>
+    <span>2020.8.10–21</span>&emsp;
     <span>9:00–17:00</span><br />
     <span>臺灣大學管理學院一號館 102 教室</span>
   </header>
@@ -108,7 +111,7 @@
     <p>報名人數超過名額上限時，將依報名所填的修課理由篩選。</p>
   </section>
 </div>
-<div>
+<div class="ocean">
   <section>
     <h2>報名詳細辦法</h2>
     <p>本暑期營有以下四種報名參與途徑，詳細報名方式與截止日期略微有異。</p>
@@ -241,35 +244,107 @@
       <div class="pb-3 pr-5">
         <object type="image/svg+xml" data="../../img/logo.svg" style="height: 3.5rem;"></object>
       </div>
-      <dl class="dl-vbar"><dt class>主辦單位</dt><dd><ul class="list-inline-block m-0"><li>中央研究院資訊科學所</li><li>台灣大學資訊管理學系</li><li>台灣大學資訊工程學系</li><li>台灣大學電機工程學系</li></ul>
-        </dd><dt>籌辦團隊</dt>
-        <dd><dl class="inline-block-lists m-0"><div><dt class>課程委員</dt><dd>
-          <div class="container-4-rows">
-                  <div>陳郁方</div>
-                </div></dd></div><div>
-                  <dt>事務委員</dt><dd><div = class="container-4-rows">
-                    </div></dd></div><div>
-                  <dt>助教團長</dt><dd>
-                <div = class="container-4-rows">
+      <dl class="dl-vbar">
+        <dt>主辦單位</dt>
+        <dd>
+          <ul class="list-inline-block m-0">
+            <li>中央研究院資訊科學所</li>
+            <li>台灣大學資訊管理學系</li>
+          </ul>
+        </dd>
+        
+        <dt>贊助單位</dt>
+        <dd>
+          <ul class="list-inline-block m-0">
+          
+            <li>台灣大學資訊工程學系</li>
+          
+            <li>台灣大學電機工程學系</li>
+          
+          </ul>
+        </dd>
+        
+        <dt>籌辦團隊</dt>
+        <dd>
+          <dl class="inline-block-lists m-0">
+            
+            <div>
+              <dt class>課程委員</dt>
+              <dd>
+                <div class="container-4-rows">
+                  
+                  <div>柯向上</div>
+                  
+                  <div>陳亮廷</div>
+                  
+                  <div>穆信成</div>
+                  
+                </div>
               </dd>
-            </div><div>
-            <dt>助教團</dt><dd><div class="container-4-rows">
-                  </div></dd></div>
-            <!--
-            <li class="list-inline-item">陳恭</li>
-            <li class="list-inline-item">莊庭瑞</li>
-            <li class="list-inline-item">穆信成</li>
-            <li class="list-inline-item">蔡益坤</li>
-            <li class="list-inline-item">王柏堯</li>
-            -->
+            </div>
+            
+            
+            <div>
+              <dt>事務委員</dt>
+              <dd>
+                <div = class="container-4-rows">
+                  
+                  <div>韓愷真</div>
+                  
+                  <div>林柏芬</div>
+                  
+                </div>
+              </dd>
+            </div>
+            
+            
+            <div>
+              <dt>助教團長</dt>
+              <dd>
+                <div = class="container-4-rows">
+                  <div>賴廷彥</div>
+                </div>
+              </dd>
+            </div>
+            
+            
+            <div>
+              <dt>助教團</dt>
+              <dd>
+                <div class="container-4-rows">
+                  
+                  <div>林子期</div>
+                  
+                  <div>潘廣霖</div>
+                  
+                  <div>江宗儒</div>
+                  
+                  <div>林敬文</div>
+                  
+                  <div>鄭淳丰</div>
+                  
+                  <div>潘昱仁</div>
+                  
+                  <div>曾守瑜</div>
+                  
+                  <div>張耀晟</div>
+                  
+                </div>
+              </dd>
+            </div>
+            
           </dl>
         </dd>
         <dt>連絡信箱</dt>
-        <dd><a class="text-decoration-none text-light" href="javascript:location='mai'+'lto:\u0066\u006c\u006f\u006c\u0061'+'\u0063\u0040\u0069\u0069\u0073\u002e\u0073'+'\u0069\u006e\u0069\u0063\u0061\u002e\u0065'+'\u0064\u0075\u002e\u0074\u0077';void 0"><script type="text/javascript">document.write('\u0066\u006c'+'\u006f\u006c\u0061\u0063\u0040'+'\u0069\u0069\u0073\u002e\u0073'+'\u0069\u006e\u0069\u0063'+'\u0061\u002e\u0065\u0064'+'\u0075\u002e\u0074\u0077')</script></a></dd>
+        <dd>
+          <a class="text-decoration-none text-light" href="javascript:location='mai'+'lto:\u0066\u006c\u006f\u006c\u0061'+'\u0063\u0040\u0069\u0069\u0073\u002e\u0073'+'\u0069\u006e\u0069\u0063\u0061\u002e\u0065'+'\u0064\u0075\u002e\u0074\u0077';void 0">
+            <script type="text/javascript">document.write('\u0066\u006c'+'\u006f\u006c\u0061\u0063\u0040'+'\u0069\u0069\u0073\u002e\u0073'+'\u0069\u006e\u0069\u0063'+'\u0061\u002e\u0065\u0064'+'\u0075\u002e\u0074\u0077')</script>
+          </a>
+        </dd>
       </dl>
+    </div>
   </div>
-  </div>
-</footer> 
+</footer>
 
 </body>
 </html>
