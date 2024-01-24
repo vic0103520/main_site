@@ -5,8 +5,8 @@ on:
     branches:
       - master
       - dev
-  schedule:
-    - cron: '* 17 * * *'
+  # schedule:
+  #   - cron: '* 17 * * *'
       # Liang-Ting (2023-04-28): Run this workflow every day at 1700 UTC, i.e. 0100 Taiwan Time.
 jobs:
   build:
